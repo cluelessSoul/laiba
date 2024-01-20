@@ -1,0 +1,78 @@
+<<<<<<< HEAD
+
+ body {
+    background: url(./Photos/Ques2.jpeg) no-repeat center center/cover;
+    text-align: center;
+    /* color:#fff; */
+    /* padding-top:10em; */
+    min-height: 100vh;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+  
+  
+  /* zoom in zoom out functionality for click button */
+  .zoom-in-out-box {
+    cursor: pointer;
+    /* margin: 24px; */
+    /* margin-top: 50px; */
+    animation: zoom-in-zoom-out 1.8s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  
+  .clickMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+=======
+
+ body {
+    background: url(./Photos/Ques2.jpeg) no-repeat center center/cover;
+    text-align: center;
+    /* color:#fff; */
+    /* padding-top:10em; */
+    min-height: 100vh;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+  
+  
+  /* zoom in zoom out functionality for click button */
+  .zoom-in-out-box {
+    cursor: pointer;
+    /* margin: 24px; */
+    /* margin-top: 50px; */
+    animation: zoom-in-zoom-out 1.8s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  
+  .clickMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> b09c48bca28932bc18b1ef9ae610b7e8a663a6ab
+  }
