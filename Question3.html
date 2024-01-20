@@ -1,94 +1,31 @@
 <!DOCTYPE html>
-
-<head>
-  <title>Welcome Laiba</title>
-    <link rel="stylesheet" href="./Question3_styles.css">  
-    <style>
-      @font-face {
-        font-family: myfont;
-        src: url(cheri.liney.ttf);
-        /* src: url(easvhs.ttf); */
-      }
-      @font-face {
-        font-family: laiba;
-        src: url(MilkMango.ttf);
-        /* src: url(easvhs.ttf); */
-      }
-    </style>
-
-</head>
-
-  <body style="position: relative;">
-    <h1 style="font-family: laiba; color: #d1d1d1; font-size: 25px; position: absolute; top: 50%; right: 22%; transform: translate(0,-50%);">LAIBA</h1>
-
-    <h1 style="font-family: myfont; color: #d2d2d2; font-size: 25px; position: absolute; top: 72%; left: 11%; align-items:center; justify-content: center; transform: translate(0,-50%);">
-        <a href="" class="typewrite" data-period="2000" data-type='[ "So, you really not gonna leave without finding out, its your last chance you can still go and save yourself"]'>
-            <span class="wrap"></span>
-        </a>
-    </h1>
-    <div class="clickMe" style="position: absolute; top: 80%; left: 43%; ">
-        <a href="Question4.html" ><img class="zoom-in-out-box" src="./Photos/clickHereBlack.png" alt="clickMe" style="height: 80px; width: 180px;"></a>
-    </div>
-
-  </body>
-  <script >
-    var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        // this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap {  }";
-        document.body.appendChild(css);
-    };
-</script> 
-
-
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./Question3_styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">you really sure you wanna find out what it is ? Might be something which will give you nightmares</h1>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "Question4.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
 </html>

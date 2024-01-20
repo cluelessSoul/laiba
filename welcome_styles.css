@@ -1,19 +1,47 @@
-body{
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
   background: url(./Photos/11-11.jpeg) no-repeat center center/cover;
-  text-align: center;
-  color:#fff;
-  /* padding-top:10em; */
-  min-height: 100vh;
+  position: relative;
 }
 
-* { color:#fff; text-decoration: none;}
 
+* { color:#f3f2f0; text-decoration: none;}
+
+@font-face {
+  font-family: myfont;
+  src: url(cheri.liney.ttf);
+}
+@font-face {
+  font-family: laiba;
+  src: url(MilkMango.ttf);
+} 
+
+.name{
+  font-family: laiba;
+  font-size: 12px; 
+  position: absolute; 
+  top: 50%; 
+  right: 22%; 
+  transform: translate(0,-50%);
+}
+
+.welcomeText{
+  position: absolute;
+  top: 72%;
+  left: 11%;
+  font-family: myfont;
+  font-size: 25px;
+
+}
 
 /* zoom in zoom out functionality for click button */
 .zoom-in-out-box {
   cursor: pointer;
-  /* margin: 24px; */
-  /* margin-top: 50px; */
+  height: 120px;
+  width: 150px;
   animation: zoom-in-zoom-out 1.8s ease infinite;
 }
 
@@ -34,4 +62,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute; 
+  top: 85%; 
+  left: 43%;
 }
