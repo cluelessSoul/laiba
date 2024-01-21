@@ -1,3 +1,5 @@
+@import "fonts_styles.css";
+
 body {
   display: flex;
   justify-content: center;
@@ -10,17 +12,8 @@ body {
 
 * { color:#f3f2f0; text-decoration: none;}
 
-@font-face {
-  font-family: myfont;
-  src: url(../FONTS/cheri.liney.ttf);
-}
-@font-face {
-  font-family: laiba;
-  src: url(../FONTS/MilkMango.ttf);
-} 
-
 .name{
-  font-family: laiba;
+  font-family: mango;
   font-size: 12px; 
   position: absolute; 
   top: 50%; 
@@ -32,7 +25,7 @@ body {
   position: absolute;
   top: 72%;
   left: 11%;
-  font-family: myfont;
+  font-family: cheri;
   font-size: 25px;
 
 }

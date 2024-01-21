@@ -1,3 +1,5 @@
+@import "fonts_styles.css";
+
 body {
   display: flex;
   justify-content: center;
@@ -19,17 +21,12 @@ body {
   margin-right: 150px;
 }
 
-@font-face {
-  font-family: myfont;
-  src: url(../FONTS/MilkMango.ttf);
-}
-
 .textdiv{
   margin-bottom: 555px;
 }
 
 .typewrite {
-  font-family: myfont;
+  font-family: mango;
   font-size: 35px;
   /* font-weight: bold; */
   color: white;
