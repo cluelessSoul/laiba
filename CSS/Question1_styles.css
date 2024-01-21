@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   background: url(../PHOTOS/Ques1.jfif) no-repeat center center/cover;
 }
 
@@ -22,11 +22,12 @@ body {
 }
 
 .typewrite {
-  font-family: mango;
-  font-size: 30px;
+  font-family: peach;
+  font-size: 43px;
   font-weight: bold;
   color: white;
   text-align: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -37,7 +38,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  /* margin-left: 20px; */
 }
 
 .btn {

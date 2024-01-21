@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-color: black;
   }
   
@@ -22,7 +22,7 @@ body {
   .text{
     position: fixed;
     top: 40%;
-    left: 6%;
+    left: 10%;
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
@@ -44,11 +44,12 @@ body {
   }
   
   .typewrite {
-    font-family: mango;
-    font-size: 40px;
+    font-family: peach;
+    font-size: 50px;
     font-weight: bold;
     color: white;
     text-align: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 0px;
   }

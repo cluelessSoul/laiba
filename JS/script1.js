@@ -16,7 +16,7 @@ TxtType.prototype.tick = function() {
         // this.txt = fullTxt.substring(0, this.txt.length - 1);
         // delta=10
     } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';

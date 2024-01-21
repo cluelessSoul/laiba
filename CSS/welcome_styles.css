@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   background: url(../PHOTOS/11-11.jpeg) no-repeat center center/cover;
   position: relative;
 }
@@ -13,11 +13,11 @@ body {
 * { color:#f3f2f0; text-decoration: none;}
 
 .name{
-  font-family: mango;
+  font-family: peach;
   font-size: 12px; 
   position: absolute; 
   top: 50%; 
-  right: 22%; 
+  right: 22.3%; 
   transform: translate(0,-50%);
 }
 

@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <link rel="stylesheet" href="../CSS/Question3_styles.css">
-        
+        <title></title>
+        <link rel="stylesheet" href="../CSS/Question3_styles.css">        
     </head> 
+
     <body>
+
         <div class="container">
+
             <div class="textdiv"></div>
+
             <div >
                 <h1>
-                    <a href="" class="typewrite" data-period="2000" data-type='[ "So you not gonna leave without finding out ?","Its your last chance you can still go and save yourself"]'>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "So you not gonna leave without finding out ? It&apos;s your last chance you can still go and save yourself !"]'>
                         <span class="wrap"></span>
                     </a>
-                </h1>  
-                <h1 class = "header_text"></h1>
+                </h1> 
             </div>
+
             <div class = "buttons">
                 <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
             </div>
+
         </div>
+
         <script>
+
             function nextPage() {
                 window.location.href = "Question4.html";
             }
@@ -31,7 +39,9 @@
                 document.getElementById('noButton').style.left = `${x}px`;
                 document.getElementById('noButton').style.top = `${y}px`;
             }
+
         </script> 
         <script src="../JS/script2.js"></script>
+
     </body> 
 </html>

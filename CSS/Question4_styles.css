@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   background: url(../PHOTOS/question1.webp) no-repeat center center/cover;
 }
 
@@ -26,10 +26,11 @@ body {
 }
 
 .typewrite {
-  font-family: mango;
-  font-size: 40px;
+  font-family: peach;
+  font-size: 35px;
   font-weight: bold;
   color: white;
+  text-align: center;
   text-align: center;
   margin-top: 20px;
   /* margin-bottom: 0px; */

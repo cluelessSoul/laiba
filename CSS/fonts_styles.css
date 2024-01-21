@@ -1,8 +1,19 @@
 @font-face {
     font-family: cheri;
     src: url(../FONTS/cheri.liney.ttf);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: mango;
     src: url(../FONTS/MilkMango.ttf);
-  } 
+} 
+
+@font-face {
+    font-family: brain;
+    src: url(../FONTS/Brain.ttf);
+} 
+
+@font-face {
+    font-family: peach;
+    src: url(../FONTS/Peach.otf);
+} 

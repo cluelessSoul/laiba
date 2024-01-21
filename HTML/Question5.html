@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <link rel="stylesheet" href="../CSS/Question5_styles.css">
-        
+        <title></title>
+        <link rel="stylesheet" href="../CSS/Question5_styles.css">      
     </head> 
+
     <body>
         <div class="container">
+
             <div class="textdiv">
                 <video autoplay muted loop id="myVideo">
                     <source src="../PHOTOS/scaryVideo.mp4" type="video/mp4">
                 </video>
             </div>
+
             <div class="text">
                 <h1>
-                    <a href="" class="typewrite" data-period="2000" data-type='["I didnt do all this just for you to choose NO bitch ! Say yes !"]'>
+                    <a href="" class="typewrite" data-period="2000" data-type='["I didn&apos;t do all this just for you to choose NO bitch ! Say yes !"]'>
                         <span class="wrap"></span>
                     </a>
             </div>
+
             <div class = "buttons">
                 <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
             </div>
+
         </div>
+        
         <script>
+
             function nextPage() {
                 window.location.href = "Question4.html";
             }
@@ -33,7 +41,9 @@
                 document.getElementById('noButton').style.left = `${x}px`;
                 document.getElementById('noButton').style.top = `${y}px`;
             }
+
         </script> 
         <script src="../JS/script1.js"></script>
+
     </body> 
 </html>
