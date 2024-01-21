@@ -44,7 +44,7 @@ body {
   
   @font-face {
     font-family: myfont;
-    src: url(MilkMango.ttf);
+    src: url(../FONTS/MilkMango.ttf);
   }
   
   .typewrite {

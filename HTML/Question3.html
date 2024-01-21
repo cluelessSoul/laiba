@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="./Question1_styles.css">
+        <link rel="stylesheet" href="../CSS/Question3_styles.css">
         
     </head> 
     <body>
         <div class="container">
-            <div class="textdiv">
+            <div class="textdiv"></div>
+            <div >
                 <h1>
-                    <a href="" class="typewrite" data-period="2000" data-type='[ "I know you hate surprises but you might like this. Do you wanna find out what is it ?"]'>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "So you not gonna leave without finding out ?","Its your last chance you can still go and save yourself"]'>
                         <span class="wrap"></span>
                     </a>
-                </h1>   
+                </h1>  
+                <h1 class = "header_text"></h1>
             </div>
             <div class = "buttons">
                 <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
                 <script>
                     function nextPage() {
-                        window.location.href = "Question2.html";
+                        window.location.href = "Question4.html";
                     }
                     
                     function moveButton() {
@@ -27,7 +29,7 @@
                         document.getElementById('noButton').style.left = `${x}px`;
                         document.getElementById('noButton').style.top = `${y}px`;
                     }
-                    
+
                     var TxtType = function(el, toRotate, period) {
                     this.toRotate = toRotate;
                     this.el = el;
@@ -43,7 +45,7 @@
                         var fullTxt = this.toRotate[i];
 
                         if (this.isDeleting) {
-                        // this.txt = fullTxt.substring(0, this.txt.length - 1);
+                        this.txt = fullTxt.substring(0, this.txt.length - 1);
                         } else {
                         this.txt = fullTxt.substring(0, this.txt.length + 1);
                         }
@@ -51,9 +53,9 @@
                         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
                         var that = this;
-                        // var delta = 200 - Math.random() * 100;
+                        var delta = 200 - Math.random() * 100;
 
-                        // if (this.isDeleting) { delta /= 2; }
+                        if (this.isDeleting) { delta /= 2; }
 
                         if (!this.isDeleting && this.txt === fullTxt) {
                         delta = this.period;
@@ -61,12 +63,12 @@
                         } else if (this.isDeleting && this.txt === '') {
                         this.isDeleting = false;
                         this.loopNum++;
-                        // delta = 500;
+                        delta = 500;
                         }
 
                         setTimeout(function() {
                         that.tick();
-                        }, 150);
+                        }, delta);
                     };
 
                     window.onload = function() {

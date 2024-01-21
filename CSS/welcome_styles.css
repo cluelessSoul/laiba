@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background: url(./Photos/11-11.jpeg) no-repeat center center/cover;
+  background: url(../PHOTOS/11-11.jpeg) no-repeat center center/cover;
   position: relative;
 }
 
@@ -12,11 +12,11 @@ body {
 
 @font-face {
   font-family: myfont;
-  src: url(cheri.liney.ttf);
+  src: url(../FONTS/cheri.liney.ttf);
 }
 @font-face {
   font-family: laiba;
-  src: url(MilkMango.ttf);
+  src: url(../FONTS/MilkMango.ttf);
 } 
 
 .name{

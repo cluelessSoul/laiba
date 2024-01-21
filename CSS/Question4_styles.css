@@ -3,10 +3,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background: url(./Photos/11_11.jpg) no-repeat center center/cover;
+  background: url(../PHOTOS/question1.webp) no-repeat center center/cover;
 }
 
 * { color:#fff; text-decoration: none;}
+
+.textdiv{
+  margin-bottom: 200px;
+}
 
 #noButton {
   position: absolute;
@@ -22,11 +26,7 @@ body {
 
 @font-face {
   font-family: myfont;
-  src: url(MilkMango.ttf);
-}
-
-.textdiv{
-  margin-bottom: 520px;
+  src: url(../FONTS/MilkMango.ttf);
 }
 
 .typewrite {

@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background: url(./Photos/Ques1.jfif) no-repeat center center/cover;
+  background: url(../PHOTOS/Ques1.jfif) no-repeat center center/cover;
 }
 
 * { color:#fff; text-decoration: none;}
@@ -21,7 +21,7 @@ body {
 
 @font-face {
   font-family: myfont;
-  src: url(MilkMango.ttf);
+  src: url(../FONTS/MilkMango.ttf);
 }
 
 .typewrite {

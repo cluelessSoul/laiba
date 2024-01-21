@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="./Question5_styles.css">
+        <link rel="stylesheet" href="../CSS/Question4_styles.css">
         
     </head> 
     <body>
         <div class="container">
-            <div class="textdiv">
-                <video autoplay muted loop id="myVideo">
-                    <source src="Photos/scaryVideo.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="text">
+            <div class="textdiv"></div>
+            <div >
                 <h1>
-                    <a href="" class="typewrite" data-period="2000" data-type='["I didnt do all this just for you to choose NO bitch ! Say yes !"]'>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Okay I know I didnt give you any option to say no!","Well now I am giving you! You still wanna take the risk ?"]'>
                         <span class="wrap"></span>
                     </a>
             </div>
             <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <button class="btn" id = "yesButton" onclick="">Yes</button>
+                <button class="btn" id="noButton" onclick="nextPage()" onclick="moveButton()">No</button>
                 <script>
                     function nextPage() {
-                        window.location.href = "Question4.html";
+                        window.location.href = "Question5.html";
                     }
                     
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
+                    
 
                     var TxtType = function(el, toRotate, period) {
                     this.toRotate = toRotate;
