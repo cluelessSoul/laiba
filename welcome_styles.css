@@ -40,8 +40,8 @@ body {
 /* zoom in zoom out functionality for click button */
 .zoom-in-out-box {
   cursor: pointer;
-  height: 120px;
-  width: 150px;
+  height: 90px;
+  width: 160px;
   animation: zoom-in-zoom-out 1.8s ease infinite;
 }
 
